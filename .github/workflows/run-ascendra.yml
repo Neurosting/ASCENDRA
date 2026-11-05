@@ -52,7 +52,7 @@ jobs:
           set -euo pipefail
           case "$MODE" in
             synthetic-demo)
-              .venv/bin/ascendra demo --output run-results/demo 2>&1 | tee run-results/run.log
+              .venv/bin/ascendra demo 2>&1 | tee run-results/run.log
               ;;
             agent-help)
               .venv/bin/ascendra-agent --help 2>&1 | tee run-results/run.log
